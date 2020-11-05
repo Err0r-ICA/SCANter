@@ -21,9 +21,9 @@
 
 #### OS Support :
 
-- <h5> Linux</h5>
-- <h5> Android</h5>
-- <h5> Windows</h5>
+- <h5> Kali Linux </h5>
+- <h5> Android - Termux </h5>
+- <h5> Windows </h5>
 
 ## Install
 ### [Linux](https://wikipedia.org/wiki/Linux) [![alt tag](http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)](https://fr.wikipedia.org/wiki/Linux)
@@ -34,7 +34,7 @@
    $ cd SCANter
    $ python3 -m pip install -r requirements.txt
    ````
-### Andoird <img src="https://img.icons8.com/clouds/100/000000/android-os.png">
+### Android <img src="https://img.icons8.com/clouds/100/000000/android-os.png">
 * Download <a href='https://play.google.com/store/apps/details?id=com.termux&hl=en'>Termux App</a>
 * open termux app
 * enter this command
