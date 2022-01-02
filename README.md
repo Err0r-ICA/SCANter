@@ -1,5 +1,4 @@
-# SCANter
-<b><i>Web Security Scanner</b></i> 
+# SCANter - Web Security Scanner
 
 * ##### Detect This vulnerabilities
   * <h5>Remote Code Execution</h5>
