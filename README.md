@@ -1,4 +1,6 @@
-# SCANter - Web Security Scanner
+# SCANter - Web Security Scanner 🔎
+
+## 📒 Description 📒
 
 * ##### Detect This vulnerabilities
   * <h5>Remote Code Execution</h5>
@@ -14,17 +16,17 @@
      </ul>
   * <h5>SQl Injection </h5>
 
- ## Screenshot
+## 📸 Screenshot 📸
 ![Screenshot](https://i.postimg.cc/4ZSdm0Vm/IMG-20200427-162813-866.jpg) 
 
 
-#### OS Support :
+## OS Support 
 
 - <h5> Kali Linux </h5>
 - <h5> Android - Termux </h5>
 - <h5> Windows </h5>
 
-## Install
+## 💿 Installation 💿
 ### [Linux](https://wikipedia.org/wiki/Linux) [![alt tag](http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)](https://fr.wikipedia.org/wiki/Linux)
 * open your terminal 
 * enter this command 
@@ -52,7 +54,7 @@
 $ python3 -m pip install -r requirements.txt
 ````
 
-## Usage :
+## 🧾 Usage 🧾 
 ````
 Options:
   -h, --help          |    Show help message and exit
@@ -75,7 +77,7 @@ Options:
   --module            |    add custom module (e.g. "google.py")
 
 ````
-### Example :
+### ☠️ Input Example ☠️
 
 ``` $ python3 Scanner -u 'http://localhost/dvwa/vulnerabilities/exec/' --data='ip=localhost&Submit=Submit' --cookies='PHPSESSID=safasf' ```
 
