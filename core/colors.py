@@ -1,8 +1,9 @@
-__author__ = 'Khaled Nassar'
+__author__ = 'Err0r_HB'
 __version__ = '0.3#beta'
-__github__ = 'https://github.com/knassar702/scant3r'
-__email__ = 'knassar702@gmail.com'
-__blog__ = 'https://knassar7o2.blogspot.com'
+__github__ = 'https://github.com/Err0r-ICA/SCANter'
+__email__ = 'error_hb@protonmail.com'
+__blog__ = 'https://t.me/termuxhacks'
+
 import sys
 import os
 import platform
