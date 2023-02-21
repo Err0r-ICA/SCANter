@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# ScanT3r Web application Security Scanner - By : Khaled Nassar @knassar702
+# ScanT3r Web application Security Scanner - By : Err0r_HB @termux_hacking 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
@@ -13,13 +13,13 @@
 #
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-__author__ = 'Khaled Nassar'
+
+__author__ = 'Err0r_HB'
 __version__ = '0.3#beta'
-__github__ = 'https://github.com/knassar702/scant3r'
-__email__ = 'knassar702@gmail.com'
-__blog__ = 'https://knassar7o2.blogspot.com'
+__github__ = 'https://github.com/Err0r-ICA/SCANter'
+__email__ = 'error_hb@protonmail.com'
+__blog__ = 'https://t.me/termuxhacks'
+
 import importlib
 import sys
 import os
