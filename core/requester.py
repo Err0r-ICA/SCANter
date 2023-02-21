@@ -11,14 +11,13 @@
 #
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-#
-__author__ = 'Khaled Nassar'
+
+__author__ = 'Err0r_HB'
 __version__ = '0.3#beta'
-__github__ = 'https://github.com/knassar702/scant3r'
-__email__ = 'knassar702@gmail.com'
-__blog__ = 'https://knassar7o2.blogspot.com'
+__github__ = 'https://github.com/Err0r-ICA/SCANter'
+__email__ = 'error_hb@protonmail.com'
+__blog__ = 'https://t.me/termuxhacks' 
+
 from datetime import datetime
 from .colors import *
 from .config import *
